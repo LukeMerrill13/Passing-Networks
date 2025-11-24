@@ -65,6 +65,8 @@ for i, team in enumerate(teams):
 
         pitch = Pitch(pitch_type='statsbomb')
         fig, ax = plt.subplots(figsize=(9, 6))
+        ax.set_facecolor("#0E1117")
+        fig.patch.set_facecolor("#0E1117")
 
         team_df = df.loc[df['team_name'] == team]
 
@@ -132,7 +134,7 @@ for i, team in enumerate(teams):
         # draw player positions
         pitch.scatter(
             positions['x'], positions['y'],
-            s=positions['marker_size'], facecolor='black',
+            s=positions['marker_size'], facecolor='white',
             edgecolors='white', zorder=2, linewidth=1, alpha=1, ax=ax
         )
 
