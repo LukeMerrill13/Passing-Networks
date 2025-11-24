@@ -22,6 +22,9 @@ selected_match = st.selectbox('Select a match', matches['match'].to_list())
 match_id = matches.loc[matches['match'] == selected_match, 'match_id'].iloc[0]
 home_team = matches.loc[matches['match'] == selected_match, 'home_team_name'].iloc[0]
 away_team = matches.loc[matches['match'] == selected_match, 'away_team_name'].iloc[0]
+
+teams = [home_team, away_team]
+
 team_colours = {
     "Netherlands": "#FF8C00",     # bright orange (DarkOrange)
     "Spain": "#FF4C4C",           # bright red
