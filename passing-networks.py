@@ -63,7 +63,7 @@ for i, team in enumerate(teams):
 
     with col:
 
-        pitch = Pitch(pitch_type='statsbomb', pitch_color="#0E1117", line_color="white)
+        pitch = Pitch(pitch_type='statsbomb', pitch_color="#0E1117", line_color="white")
         fig, ax = plt.subplots(figsize=(9, 6))
 
         team_df = df.loc[df['team_name'] == team]
