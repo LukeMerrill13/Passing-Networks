@@ -148,7 +148,7 @@ for i, team in enumerate(teams):
         if i == 0:
             fig.text(
                 0.16, 0.91, team,
-                ha="left", va="top",
+                ha="left", va="top", color = "white",
                 fontsize=16, fontweight="bold"
             )
         
@@ -160,7 +160,7 @@ for i, team in enumerate(teams):
                 fontsize=16, fontweight="bold"
             )
         pitch.draw(ax=ax)
-        st.pyplot(fig)
+        st.pyplot(fig, facecolor="#0E1117")
 
   
   
