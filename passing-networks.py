@@ -22,33 +22,31 @@ selected_match = st.selectbox('Select a match', matches['match'].to_list())
 match_id = matches.loc[matches['match'] == selected_match, 'match_id'].iloc[0]
 home_team = matches.loc[matches['match'] == selected_match, 'home_team_name'].iloc[0]
 away_team = matches.loc[matches['match'] == selected_match, 'away_team_name'].iloc[0]
-teams = [home_team, away_team]
-
 team_colours = {
-    "Netherlands": "orange",          # iconic bright orange
-    "Spain": "red",                   # red shirt, dark/blue shorts
-    "Portugal": "darkred",            # deep red
-    "Denmark": "red",                 # red and white
-    "England": "navy",               # white shirt
-    "Ukraine": "yellow",              # yellow and blue
-    "Czech Republic": "red",          # red shirt
-    "Austria": "red",                 # red and white
-    "Romania": "yellow",              # yellow/blue/red
-    "France": "navy",                 # dark blue
-    "Albania": "red",                 # red and black
-    "Germany": "black",               # white shirt, black shorts
-    "Switzerland": "red",             # red shirt with white cross
-    "Scotland": "navy",               # dark blue
-    "Croatia": "red",                 # red/white checks (use red)
-    "Belgium": "red",                 # red with black/yellow accents
-    "Italy": "blue",                  # “azzurri” blue
-    "Poland": "white",                # white and red
-    "Slovakia": "blue",               # blue and white
-    "Georgia": "darkred",               # often white
-    "Turkey": "red",                  # red with white crescent
-    "Slovenia": "green",              # white with green/blue details
-    "Serbia": "red",                  # red
-    "Hungary": "red",                 # red, white, green
+    "Netherlands": "#FF8C00",     # bright orange (DarkOrange)
+    "Spain": "#FF4C4C",           # bright red
+    "Portugal": "#B22222",        # firebrick (lighter than darkred)
+    "Denmark": "#FF4C4C",         # bright red
+    "England": "white",         
+    "Ukraine": "#FFD300",         # bright yellow (high contrast)
+    "Czech Republic": "#FF4C4C",  # bright red
+    "Austria": "#FF4C4C",         # bright red
+    "Romania": "#FFD300",         # bright yellow
+    "France": "#4C6FFF",          # brighter navy
+    "Albania": "#FF4C4C",         # bright red
+    "Germany": "white",         # light gray/white
+    "Switzerland": "#FF4C4C",     # bright red
+    "Scotland": "#4C6FFF",        # bright navy/blue
+    "Croatia": "#FF4C4C",         # bright red
+    "Belgium": "#FF4C4C",         # bright red
+    "Italy": "#4C9AFF",           # bright azzurri blue
+    "Poland": "#FFFFFF",          # white
+    "Slovakia": "#4C9AFF",        # bright blue
+    "Georgia": "white",         # lighter dark red
+    "Turkey": "#FF4C4C",          # bright red
+    "Slovenia": "#7CFC00",        # bright green (LawnGreen)
+    "Serbia": "#FF4C4C",          # bright red
+    "Hungary": "#FF4C4C",         # bright red
 }
 
 
