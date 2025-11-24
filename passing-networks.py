@@ -1,5 +1,6 @@
 """ Passing Networks """
 
+!pip install mplsoccer
 from mplsoccer import Sbopen
 from mplsoccer import Pitch
 import matplotlib.pyplot as plt
