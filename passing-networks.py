@@ -63,10 +63,8 @@ for i, team in enumerate(teams):
 
     with col:
 
-        pitch = Pitch(pitch_type='statsbomb')
+        pitch = Pitch(pitch_type='statsbomb', pitch_color="#0E1117", line_color="white)
         fig, ax = plt.subplots(figsize=(9, 6))
-        ax.set_facecolor("#0E1117")
-        fig.patch.set_facecolor("#0E1117")
 
         team_df = df.loc[df['team_name'] == team]
 
@@ -135,14 +133,14 @@ for i, team in enumerate(teams):
         pitch.scatter(
             positions['x'], positions['y'],
             s=positions['marker_size'], facecolor='white',
-            edgecolors='white', zorder=2, linewidth=1, alpha=1, ax=ax
+            edgecolors='black', zorder=2, linewidth=1, alpha=1, ax=ax
         )
 
         # jersey numbers
         for _, pos in positions.iterrows():
             pitch.annotate(
                 int(pos['jersey_number']) if not np.isnan(pos['jersey_number']) else "",
-                xy=(pos['x'], pos['y']), c='white',
+                xy=(pos['x'], pos['y']), c='black',
                 va='center', ha='center', size=9.5, weight='bold', ax=ax
             )
 
@@ -158,10 +156,9 @@ for i, team in enumerate(teams):
         else:
             fig.text(
                 0.86, 0.91, team,
-                ha="right", va="top",
+                ha="right", va="top", color="white,
                 fontsize=16, fontweight="bold"
             )
-        # Title
         pitch.draw(ax=ax)
         st.pyplot(fig)
 
