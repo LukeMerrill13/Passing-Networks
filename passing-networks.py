@@ -111,8 +111,11 @@ for i, team in enumerate(teams):
 
         if i == 1:
             positions['x'] = 120 - positions['x']
+            positions['y'] = 80 - positions['y']
             passing_links['x0'] = 120 - passing_links['x0']
+            passing_links['y0'] = 80 - passing_links['y0']
             passing_links['x1'] = 120 - passing_links['x1']
+            passing_links['y1'] = 80 - passing_links['y1']
 
         # transparency gradient
         min_transparency = 0.05
