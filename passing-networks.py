@@ -156,7 +156,7 @@ for i, team in enumerate(teams):
         else:
             fig.text(
                 0.86, 0.91, team,
-                ha="right", va="top", color="white,
+                ha="right", va="top", color="white",
                 fontsize=16, fontweight="bold"
             )
         pitch.draw(ax=ax)
